@@ -36,7 +36,7 @@ export const StyledH1 = styled.h1`
   /* margin: 0 0 1rem 0;
    */
   margin: ${({ marginLeft }) => (marginLeft ? "0 0 0 5px" : "0 0 1rem 0")};
-  color: ${(props) => defineColor(props.color ? props.color : "black !important")};
+  color: #215195;
   display: ${({ display }) => (display ? display : "block")};
 `;
 

@@ -15,40 +15,24 @@ export const SignInHolder = styled.div`
   box-shadow: 2px 1px 2px 2px #E1E1E1;
 `;
 
-export const InputField = styled.input`
-  width: 100%;
-  box-sizing: border-box;
-  align-items: center;
-  margin-top: -5rem;
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  border: none;
-  background-color: #fff;
-  color: #000;
-  -webkit-appearance: none;
-  appearance: none;
-  border-radius: 5px;
+export const DedalusLogoContainer = styled.div`
+    box-sizing: border-box;
+    display: flex;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    justify-content: flex-start;
 
-  &:hover {
-    box-shadow: 0 0 5px #7D7D7F;
-    transition: all 100ms linear;
-  }
+`
 
-  @media (max-width: 1250px) {
-    width: 30%;
-    margin-right: 2rem;
-    margin-bottom: 3rem;
-    margin-top: -19rem;
-  }
-`;
-
-export const InputLabelWrapper = styled.div`
-  display: flex;
-  gap: 0.3rem;
-  flex-direction: column;
-  max-width: 300px;
-  width: 100%
-`;
-
+export const InnerFormContainer = styled.div`
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-item: center;
+    text-align: center;
+    margin: auto;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    border-radius: 4px;
+`
