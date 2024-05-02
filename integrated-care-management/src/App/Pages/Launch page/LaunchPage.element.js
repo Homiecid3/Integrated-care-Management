@@ -16,14 +16,25 @@ export const SignInHolder = styled.div`
 `;
 
 export const InputField = styled.input`
-  width: 40%;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
   margin-top: -5rem;
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
   padding: 10px;
   border: none;
-  border-bottom: 2px solid #950740;
-  background: transparent;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+
+  &:hover {
+    box-shadow: 0 0 5px #7D7D7F;
+    transition: all 100ms linear;
+  }
 
   @media (max-width: 1250px) {
     width: 30%;
@@ -31,5 +42,13 @@ export const InputField = styled.input`
     margin-bottom: 3rem;
     margin-top: -19rem;
   }
+`;
+
+export const InputLabelWrapper = styled.div`
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%
 `;
 

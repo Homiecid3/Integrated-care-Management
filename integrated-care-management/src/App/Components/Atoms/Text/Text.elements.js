@@ -1,5 +1,5 @@
 // Import: Dependencies
-import styled, { css } from "styled-components/macro";
+import styled, { css } from "styled-components";
 
 export const defineColor = (color) =>
     color === "blue"
