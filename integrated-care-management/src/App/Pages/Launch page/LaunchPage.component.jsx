@@ -12,9 +12,8 @@ import {
 } from "./LaunchPage.element";
 import Button from "../../Components/Atoms/Button/Button.component";
 import { InputBox } from "../../Components/Atoms/Input/Input.conponent";
-import Text from "../../Components/Atoms/Text/Text.component";
-import { StyledH1 } from "../../Components/Atoms/Text/Text.elements";
 import { useNavigate } from "react-router";
+import Text from "../../Components/Atoms/Text/Text.component";
 
 export default function LaunchPage() {
   const Navigate = useNavigate();
@@ -30,7 +29,7 @@ export default function LaunchPage() {
               alt="Dedalus Logo"
             />
           </DedalusLogoContainer>
-          <StyledH1 isBold={true}>Integrate Care Management</StyledH1>
+          <Text style={{ fontWeight: "900", width: "20rem" }} isBold={true} color={"#103157"} type={"h1"}>Integrated Care Management</Text>
           <InputBox labelText={"Username"} />
           <InputBox labelText={"Password"} />
           <Button

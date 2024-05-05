@@ -2,33 +2,35 @@
 import styled, { css } from "styled-components";
 
 export const defineColor = (color) =>
-    color === "blue"
-        ? "#5578a0"
-        : color === "brightblue"
-            ? "#0a72e6"
-            : color === "orange"
-                ? "#FE6F61"
-                : color === "darkgreen"
-                    ? "#05658E"
-                    : color === "lightgreen"
-                        ? "#038889"
-                        : color === "purple"
-                            ? "#5E60CE"
-                            : color === "grey"
-                                ? "#757579 !important"
-                                : color === "white"
-                                    ? "#FFFFFF"
-                                    : color === "red"
-                                        ? "#E20000 !important"
-                                        : color === "black"
-                                            ? "#000 !important"
-                                            : "black";
+      color === "darkblue"
+    ? "#215195"
+    : color === "blue"
+    ? "#5578a0"
+    : color === "brightblue"
+    ? "#0a72e6"
+    : color === "orange"
+    ? "#FE6F61"
+    : color === "darkgreen"
+    ? "#05658E"
+    : color === "lightgreen"
+    ? "#038889"
+    : color === "purple"
+    ? "#5E60CE"
+    : color === "grey"
+    ? "#757579 !important"
+    : color === "white"
+    ? "#FFFFFF"
+    : color === "red"
+    ? "#E20000 !important"
+    : color === "black"
+    ? "#000 !important"
+    : "black";
 
 // SWITCH CASE "h1" - Pat ient banner heading
 export const StyledH1 = styled.h1`
   text-decoration: none;
   font-family: SF-Pro-Display;
-  font-size: 1.375rem;
+  font-size: 1.9rem;
   /* or font-size: 20px; */
   font-weight: 900;
   font-style: normal;
@@ -42,14 +44,15 @@ export const StyledH1 = styled.h1`
 
 // SWITCH CASE "h2"
 export const StyledH2 = styled.h2`
- text-decoration: none;
+  text-decoration: none;
   font-family: SF-Pro-Display;
   font-size: 1rem;
   /* or font-size: 18px; */
   font-weight: 600;
   font-style: normal;
   line-height: 24px;
-  color: ${(props) => defineColor(props.color ? props.color : "black !important")};
+  color: ${(props) =>
+    defineColor(props.color ? props.color : "black !important")};
   margin: 0 0 1rem 0;
   margin-top: ${({ marginTop }) => (marginTop ? marginTop : "0px")};
 `;
@@ -64,7 +67,7 @@ export const StyledH3 = styled.h3`
   line-height: 24px;
   font-weight: 900;
   margin: 0 0 1rem 0;
-  color: ${(props) => defineColor(props.color ? props.color : "black !important")};
+    color: #215195;
 `;
 
 // SWITCH CASE "h4" - no styled H4 in oneEd. added as extra
@@ -78,7 +81,8 @@ export const StyledH4 = styled.h4`
   line-height: 24px;
   font-weight: 700;
   margin: 0 0 1rem 0;
-  color: ${(props) => defineColor(props.color ? props.color : "black !important")};
+  color: ${(props) =>
+    defineColor(props.color ? props.color : "black !important")};
 `;
 
 // SWITCH CASE "h5" - Text used for patient name in patient banner
@@ -140,19 +144,20 @@ export const StyledSmallSpan = styled.span`
   font-family: "SF-Pro-Display";
   font-size: 0.8rem;
   /* or font-size: 11px; */
-  font-weight: ${({ isBold, fontWeight }) => (isBold ? "700" : fontWeight ? "500 !important" : "400")};
+  font-weight: ${({ isBold, fontWeight }) =>
+    isBold ? "700" : fontWeight ? "500 !important" : "400"};
   font-style: normal;
   display: ${({ display }) => (display ? display : "inline")};
   line-height: 16px;
   margin: ${({ marginLeft }) => (marginLeft ? "0 0 0 5px" : null)};
   color: ${(props) =>
-        props.healthConditionName === "Medication"
-            ? "#757579"
-            : props.healthConditionName === "Allergies"
-                ? "#757579"
-                : props.color
-                    ? props.color
-                    : props.theme.colors.global.cardSpan};
+    props.healthConditionName === "Medication"
+      ? "#757579"
+      : props.healthConditionName === "Allergies"
+      ? "#757579"
+      : props.color
+      ? props.color
+      : props.theme.colors.global.cardSpan};
 `;
 
 // SWITCH CASE "navSpan" - Tab nav text
@@ -196,12 +201,14 @@ export const StyledParagraph = styled.p`
   font-family: "SF-Pro-Display";
   font-size: 14px;
   /* or font-size: 16px; */
-  font-weight: ${({ isBold, fontWeight }) => (isBold ? "700 !important" : fontWeight ? "500 !important" : "400")};
+  font-weight: ${({ isBold, fontWeight }) =>
+    isBold ? "700 !important" : fontWeight ? "500 !important" : "400"};
   font-style: normal;
   line-height: 16px;
   margin-top: ${({ marginTop }) => (marginTop ? marginTop : "0px")};
   margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : "4px")};
-  color: ${(props) => defineColor(props.color ? props.color : "#757579 !important")};
+  color: ${(props) =>
+    defineColor(props.color ? props.color : "#757579 !important")};
 `;
 //#757579
 // SWITCH CASE used for the ipad bottom nav bar text
@@ -213,7 +220,8 @@ export const NavP = styled.p`
   line-height: 16px;
   margin-top: ${({ marginTop }) => (marginTop ? marginTop : "0px")};
   margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : "4px")};
-  color: ${(props) => defineColor(props.color ? props.color : "#757579 !important")};
+  color: ${(props) =>
+    defineColor(props.color ? props.color : "#757579 !important")};
 `;
 
 // SWITCH CASE "navSpan" - Tab nav text

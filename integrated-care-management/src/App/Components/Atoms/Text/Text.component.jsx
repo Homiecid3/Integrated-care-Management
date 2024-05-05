@@ -23,26 +23,7 @@ import {
     CardText,
 } from './Text.elements'
 
-// Component: Text
 
-/**
- * ====== OPTIONAL PROPS ======
- *
- * isBold = boolean
- *
- * type = string, the values accepted are
- * h1, h2, h3, h4, h5, h6, labelL, labelS, p, span
- * The default type is p
- *
- * className = string to be passed as class, it can override the default styling
- *
- * style = object containing inline styling, it can override the default styling
- *
- * color = string, the values accepted are orange, darkgreen, lightgreen, purple
- * The default color is black
- *
- *
- */
 export default function Text({
     healthConditionName,
     isBold,

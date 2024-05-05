@@ -18,8 +18,10 @@ export const SignInHolder = styled.div`
 export const DedalusLogoContainer = styled.div`
     box-sizing: border-box;
     display: flex;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
+    positiom: absolute;
+    padding-left: 4rem;
+    margin-top: -4rem;
+    padding-bottom: 0.5rem;
     justify-content: flex-start;
 
 `
