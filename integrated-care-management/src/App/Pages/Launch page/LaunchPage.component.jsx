@@ -4,6 +4,7 @@ import React from "react";
 //IMPORT: ASSETS
 import DedalusLogo from "../../../Assets/Logo/dedalus2.png";
 import {
+  ButtonContainer,
   DedalusLogoContainer,
   InnerFormContainer,
   InputField,
@@ -29,9 +30,10 @@ export default function LaunchPage() {
               alt="Dedalus Logo"
             />
           </DedalusLogoContainer>
-          <Text style={{ fontWeight: "900", width: "20rem" }} isBold={true} color={"#103157"} type={"h1"}>Integrated Care Management</Text>
+          <Text style={{ fontWeight: "900", width: "25rem", marginLeft: "-1rem" }} isBold={true} color={"#103157"} type={"h2"}>Integrated Care Management</Text>
           <InputBox labelText={"Username"} />
-          <InputBox labelText={"Password"} />
+          <InputBox type={"password"} labelText={"Password"} />
+          <ButtonContainer>
           <Button
             text={"Login"}
             to="/mainhub"
@@ -39,6 +41,7 @@ export default function LaunchPage() {
               Navigate("/mainhub");
             }}
           />
+          </ButtonContainer>
         </InnerFormContainer>
       </SignInHolder>
     </>

@@ -46,16 +46,19 @@ export const StyledH1 = styled.h1`
 export const StyledH2 = styled.h2`
   text-decoration: none;
   font-family: SF-Pro-Display;
-  font-size: 1rem;
+  font-size: 1.5rem;
   /* or font-size: 18px; */
   font-weight: 600;
   font-style: normal;
   line-height: 24px;
-  color: ${(props) =>
-    defineColor(props.color ? props.color : "black !important")};
+  color: #215195;  
   margin: 0 0 1rem 0;
   margin-top: ${({ marginTop }) => (marginTop ? marginTop : "0px")};
+
 `;
+
+  // color: ${(props) =>
+    // defineColor(props.color ? props.color : "black !important")};
 
 // SWITCH CASE "h3" - Add alert page title
 export const StyledH3 = styled.h3`
